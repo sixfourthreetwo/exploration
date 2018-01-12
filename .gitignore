@@ -99,3 +99,12 @@ ENV/
 
 # mypy
 .mypy_cache/
+.idea/exploration.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+.sass-cache/
+
+# Ignore Mac DS_Store files
+.DS_Store
