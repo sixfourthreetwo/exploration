@@ -823,69 +823,17 @@ body {
 .push-lg {
   margin-top: 320px; }
 
+.push-sm {
+  margin-top: 60px; }
+
 body {
-  background-color: #FFFFFF; }
+  background-color: #4A4759; }
 
-.scale-icon {
-  width: 48px;
-  height: 48px; }
-
-#corner {
-  animation-duration: 2s;
-  animation-name: scale-up-bl; }
-
-#expand {
-  animation-duration: 2s;
-  animation-name: scale-up-bl; }
-
-.scale-up-bl {
-  -webkit-animation: scale-up-bl 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s both;
-  animation: scale-up-bl 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s both; }
-
-@-webkit-keyframes scale-up-bl {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%; }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%; } }
-@keyframes scale-up-bl {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%; }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%; } }
-@keyframes bounceIn {
-  0% {
-    transform: scale(0.1);
-    opacity: 0; }
-  60% {
-    transform: scale(0.6);
-    opacity: 1; }
-  100% {
-    transform: scale(1); } }
 /** Target Icon **/
-.target-box {
-  width: 30px;
-  height: 30px;
-  background-color: #B7DACF;
-  position: absolute;
-  z-index: -2;
-  margin-top: 13px;
-  margin-left: -13px; }
-
-.target-icon {
-  width: 48px;
-  height: 48px; }
+#target-icon {
+  width: 32px;
+  height: 32px;
+  fill: #E47982; }
 
 #round {
   -webkit-animation-name: rotation;
@@ -898,7 +846,8 @@ body {
   animation-iteration-count: infinite;
   transform-origin: 0% 100%;
   -webkit-transform-origin: 0% 100%;
-  -ms-transform-origin: 0% 100%; }
+  -ms-transform-origin: 0% 100%;
+  fill: #FDB5B0; }
 
 @-webkit-keyframes rotation {
   0% {
@@ -914,56 +863,106 @@ body {
     transform: rotate(360deg); }
   100% {
     transform: rotate(360deg); } }
-.messages-icon {
-  width: 48px;
-  height: 48px; }
-
-#line {
-  animation: popIn 1.2s infinite;
-  animation-delay: 1s; }
-
-#message-dot {
-  animation: popIn 1.2s infinite;
-  animation-delay: 1s; }
-
-#small-line {
-  animation: popIn 1.2s infinite; }
-
-@keyframes popIn {
-  0% {
-    opacity: 0; }
-  30% {
-    opacity: 1; }
-  60% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
+/** Phone Icon **/
 #phone-icon {
-  width: 48px;
-  height: 48px;
-  animation: shake-small 1s infinite; }
+  width: 32px;
+  height: 32px;
+  animation: shake-small 1.2s infinite;
+  fill: #E47982; }
 
 #phone-dot-1 {
-  animation: popIn 1.2s infinite; }
+  display: none; }
 
 #phone-dot-2 {
-  animation: popIn 1.2s infinite;
-  animation-delay: 1s; }
+  display: none; }
 
 #phone-dot-3 {
-  animation: popIn 1.2s infinite;
-  animation-delay: 2s; }
+  display: none; }
 
 @keyframes shake-small {
   0% {
-    transform: translate(1px, 0); }
+    transform: translate(1px, 0) rotate(2deg); }
   10% {
-    transform: translate(-1px, 0); }
+    transform: translate(-1px, 0) rotate(-2deg); }
   20% {
     transform: translate(1px, 0); }
   30% {
-    transform: translate(-1px, 0); }
+    transform: translate(0, 0); }
   100% {
     transform: translate(0, 0); } }
+/** Health Icon **/
+.health-icon {
+  width: 32px;
+  height: 32px;
+  fill: #E47982; }
+
+.path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: dash 2.8s infinite; }
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 100; }
+  25% {
+    stroke-dashoffset: 80; }
+  50% {
+    stroke: #4A4759; }
+  100% {
+    stroke-dashoffset: 20;
+    stroke: #4A4759; } }
+/** Messages Icon **/
+#messages-icon {
+  width: 32px;
+  height: 32px;
+  fill: #E47982; }
+
+.message-dots, .message-dot2, .message-dot3, .message-dot1 {
+  fill: #FDB5B0;
+  animation: message-dots 2s infinite; }
+
+.message-dot2 {
+  animation-delay: 0.3s; }
+
+.message-dot3 {
+  animation-delay: 0.6s; }
+
+@keyframes message-dots {
+  0% {
+    opacity: 0;
+    transform: translate(0, 1px); }
+  50% {
+    opacity: 1;
+    transform: translate(0, -1px); }
+  100% {
+    opacity: 0;
+    transform: translate(0, 1px); } }
+/** Settings Icon **/
+#settings-icon {
+  width: 32px;
+  height: 32px;
+  fill: #E47982; }
+
+#settings-control1, #settings-control2, #settings-control3 {
+  fill: #FDB5B0; }
+
+.knob1 {
+  animation: settingsUpDown 5s infinite;
+  animation-delay: 0.2s; }
+
+.knob3 {
+  animation: settingsDownUp 4s infinite; }
+
+.knob3 {
+  animation: settingsUpDown 5s infinite;
+  animation-delay: 1.2s; }
+
+@keyframes settingsUpDown {
+  0% {
+    transform: translate(0, 0px); }
+  50% {
+    transform: translate(0, -8px); }
+  100% {
+    transform: translate(0, 0px); } }
 
 /*# sourceMappingURL=main.css.map */

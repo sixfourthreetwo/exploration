@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Animated icons - CSS only</title>
+	<title>Animated icons - SVG Icons and CSS animation</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" type="text/css">
 	<link rel="stylesheet" href="../../css/main.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
@@ -24,26 +24,28 @@
 			<div class="row row--no-wrap push-lg">
 				<div class="col-2"></div>
 				<div class="col-2 center">
-					<div class="target-box"></div>
-					<svg class="target-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<svg id="target-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 						<g id="target-icon">
 							<path id="outside"
 								  d="M12 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10zm0-18c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z"/>
 							<path id="inside"
 								  d="M12 18c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm0-10c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z"/>
 							<circle id="dot" cx="12" cy="12" r="1"/>
-							<path id="round" d="M12 12l4.1-6.8s1.4.4 2.6 2.6L12 12z"/>
+							<path id="round" d="M12 12l5.5-9s1.9.5 3.5 3.4L12 12z"/>
 						</g>
 					</svg>
 				</div>
 				<div class="col-2 center">
-					<svg class="messages-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-						<g id="messages-icon">
-							<path id="border"
-								  d="M20 3H4c-1.1 0-2 .9-2 2v12c0 1.1.9 0 2 0H2v4c0 .8 1 1.3 1.6.8l5.2-4.3c.4-.3.8-.5 1.3-.5H20c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 11c0 .6-.4 1-1 1H9.4c-.5 0-.9.2-1.3.5l-3.3 2.7c-.3.3-.8 0-.8-.4V16v-2 0-8c0-.6.4-1 1-1h14c.6 0 1 .4 1 1v8z"/>
-							<path id="small-line" d="M11 11H7c-.6 0-1 .4-1 1s.4 1 1 1h4c.6 0 1-.4 1-1s-.4-1-1-1z"/>
-							<path id="line" d="M13 7H7c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/>
-							<circle id="message-dot" cx="17" cy="8" r="1"/>
+					<svg class="health-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<g id="health-icon">
+							<circle id="dot_1_" cx="15" cy="3" r="1"/>
+							<path class="path" id="pulse" fill="none" stroke="#FDB5B0" stroke-width="2"
+								  stroke-linecap="round"
+								  stroke-linejoin="round" stroke-miterlimit="10" d="M3 13h4l2-4 2 6 2-2h4"/>
+							<g id="border">
+								<path d="M12.2 2H4.4C3.1 2 2 3.1 2 4.4V9c0 .6.4 1 1 1s1-.4 1-1V5.4C4 4.6 4.7 4 5.4 4h6.8c-.1-.3-.2-.6-.2-1s.1-.7.2-1zM2 15v4.6C2 20.9 3.1 22 4.4 22h15.2c1.3 0 2.4-1.1 2.4-2.4V4.4C22 3.1 21 2 19.6 2h-1.8c.1.3.2.6.2 1s-.1.7-.2 1h.8c.8 0 1.4.6 1.4 1.4v13.2c0 .8-.6 1.4-1.4 1.4H5.4c-.7 0-1.4-.6-1.4-1.4V15"/>
+								<path d="M4 12H3c-.6 0-1 .4-1 1v2h2v-3z"/>
+							</g>
 						</g>
 					</svg>
 				</div>
@@ -60,17 +62,70 @@
 				</div>
 				<div class="col-2"></div>
 			</div>
+			<div class="row row--no-wrap push-sm">
+				<div class="col-2"></div>
+				<div class="col-2 center">
+					<svg id="messages-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<g id="messages-icon">
+							<path id="border"
+								  d="M20 3H4c-1.1 0-2 .9-2 2v12c0 1.1.9 0 2 0H2v4c0 .8 1 1.3 1.6.8l5.2-4.3c.4-.3.8-.5 1.3-.5H20c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 11c0 .6-.4 1-1 1H9.4c-.5 0-.9.2-1.3.5l-3.3 2.7c-.3.3-.8 0-.8-.4V16v-2 0-8c0-.6.4-1 1-1h14c.6 0 1 .4 1 1v8z"/>
+							<circle class="message-dot1" cx="8" cy="10" r="1"/>
+							<circle class="message-dot2" cx="12" cy="10" r="1"/>
+							<circle class="message-dot3" cx="16" cy="10" r="1"/>
+						</g>
+					</svg>
+				</div>
+				<div class="col-2 center">
+				</div>
+				<div class="col-2 center">
+					<svg id="settings-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<style>
+							.st9 {
+								fill: #4A4759
+							}
+						</style>
+						<g id="settings">
+							<g id="_x31_">
+								<path id="bar1" d="M5 20c-.6 0-1-.4-1-1V5c0-.6.4-1 1-1s1 .4 1 1v14c0 .6-.4 1-1 1z"/>
+								<g class="knob1">
+									<circle id="settings-control1" cx="5" cy="16" r="3"/>
+									<circle id="settings-dot1" class="st9" cx="5" cy="16" r="1"/>
+								</g>
+							</g>
+							<g id="_x32_">
+								<path id="bar2" d="M12 20c-.6 0-1-.4-1-1V5c0-.6.4-1 1-1s1 .4 1 1v14c0 .6-.4 1-1 1z"/>
+								<g class="knob2">
+									<circle id="settings-control2" cx="12" cy="8" r="3"/>
+									<circle id="settings-dot2" class="st9" cx="12" cy="8" r="1"/>
+								</g>
+							</g>
+							<g id="_x33_">
+								<path id="bar3" d="M19 20c-.6 0-1-.4-1-1V5c0-.6.4-1 1-1s1 .4 1 1v14c0 .6-.4 1-1 1z"/>
+								<g class="knob3">
+									<circle id="settings-control3" cx="19" cy="16" r="3"/>
+									<circle id="settings-dot3" class="st9" cx="19" cy="16" r="1"/>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</div>
+				<div class="col-2"></div>
+			</div>
 		</div>
 	</nav>
 </header>
 
 <section>
-	<div class="container">
-		<div class="row">
-			<div class="col-12 center push-lg">
+	<div class="container push-lg">
+		<div class="row ">
+			<div class="col-12 center">
+
 			</div>
 		</div>
 	</div>
 </section>
+<script>
+    console.log(document.querySelector('path').getTotalLength());
+</script>
 </body>
 </html>
