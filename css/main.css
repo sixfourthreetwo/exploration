@@ -831,8 +831,8 @@ body {
 
 /** Target Icon **/
 #target-icon {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   fill: #E47982; }
 
 #round {
@@ -865,8 +865,8 @@ body {
     transform: rotate(360deg); } }
 /** Phone Icon **/
 #phone-icon {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   animation: shake-small 1.2s infinite;
   fill: #E47982; }
 
@@ -892,8 +892,8 @@ body {
     transform: translate(0, 0); } }
 /** Health Icon **/
 .health-icon {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   fill: #E47982; }
 
 .path {
@@ -913,8 +913,8 @@ body {
     stroke: #4A4759; } }
 /** Messages Icon **/
 #messages-icon {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   fill: #E47982; }
 
 .message-dots, .message-dot2, .message-dot3, .message-dot1 {
@@ -939,8 +939,8 @@ body {
     transform: translate(0, 1px); } }
 /** Settings Icon **/
 #settings-icon {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   fill: #E47982; }
 
 #settings-control1, #settings-control2, #settings-control3 {
