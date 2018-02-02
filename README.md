@@ -4,7 +4,7 @@ A repo for smaller front-end experiments
 
 # Animated Icons - SVG and CSS
 
-The target icon is broken on Safari
+The target icon is broken on Safari 😑
 
 [Source](https://sixfourthreetwo.github.io/exploration/projects/icons/index.html)
 
