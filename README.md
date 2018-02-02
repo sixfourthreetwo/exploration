@@ -2,4 +2,4 @@
 
 A repo for smaller front-end experiments
 
-![ScreenShot](exploration/projects/icons/animatedicon.gif)
+![ScreenShot](https://github.com/sixfourthreetwo/exploration/blob/master/projects/icons/animatedicon.gif?raw=true)
